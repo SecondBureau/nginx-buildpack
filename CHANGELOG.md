@@ -1,3 +1,10 @@
+## v0.8
+
+2018-02-05
+
+* Update nginx to 1.14.0
+* added --with-http_sub_module
+
 ## v0.7
 
 2016-02-14

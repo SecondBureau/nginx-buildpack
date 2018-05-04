@@ -9,7 +9,7 @@
 # Once the dyno has is 'up' you can open your browser and navigate
 # this dyno's directory structure to download the nginx binary.
 
-NGINX_VERSION=${NGINX_VERSION-1.13.11}
+NGINX_VERSION=${NGINX_VERSION-1.14.0}
 PCRE_VERSION=${PCRE_VERSION-8.42}
 ZLIB_VERSION=${ZLIB_VERSION-1.2.11}
 
@@ -39,6 +39,7 @@ echo "Downloading $zlib_url"
     --with-pcre=pcre-${PCRE_VERSION} \
     --with-zlib=zlib-${ZLIB_VERSION} \
     --prefix=/tmp/nginx \
+    --with-http_sub_module \
     --with-http_gzip_static_module \
     --with-http_ssl_module \
     --with-threads \
