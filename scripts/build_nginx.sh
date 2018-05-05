@@ -9,8 +9,7 @@
 # Once the dyno has is 'up' you can open your browser and navigate
 # this dyno's directory structure to download the nginx binary.
 
-cd /app/.apt/usr/bin
-ln -s gcc cc 
+
 
 echo "GCC Version"
 gcc --version
