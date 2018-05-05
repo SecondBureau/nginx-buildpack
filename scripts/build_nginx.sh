@@ -9,6 +9,12 @@
 # Once the dyno has is 'up' you can open your browser and navigate
 # this dyno's directory structure to download the nginx binary.
 
+cd /app/.apt/usr/bin
+ln -s gcc cc 
+
+echo "GCC Version"
+gcc --version
+
 NGINX_VERSION=${NGINX_VERSION-1.14.0}
 PCRE_VERSION=${PCRE_VERSION-8.42}
 ZLIB_VERSION=${ZLIB_VERSION-1.2.11}
